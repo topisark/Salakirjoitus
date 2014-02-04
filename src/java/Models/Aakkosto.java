@@ -37,8 +37,7 @@ public class Aakkosto {
         for (char c : aakkoset.toCharArray()) {
             String koodi = lajittele(c);
             aakkosto.put(c, koodi);
-            koodisto.put(koodi, c);
-            System.out.println(c + " = " + koodi);
+            koodisto.put(koodi, c);            
         }
         //22 eli q aiheuttaa ongelmia :(
         koodisto.remove("22");        

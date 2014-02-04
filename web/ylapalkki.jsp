@@ -23,7 +23,7 @@
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="koodaa.jsp">Kirjoita viesti</a></li>
+                        <li><a href="koodaa.jsp">Kirjoita viesti</a></li>
                         <li><a href="pura.jsp">Tulkitse viesti</a></li>                        
                     </ul>
                 </div><!--/.nav-collapse -->
