@@ -33,20 +33,16 @@ public class Purkaja {
             if (i < koodi.length() - 1) {
                 apu += koodi.charAt(i);
                 apu += koodi.charAt(i + 1);
-                i++;
-                System.out.println("on jäljellä " + apu);
+                i++;                
             } else {
-                apu += koodi.charAt(i);
-                System.out.println("else " + apu);
+                apu += koodi.charAt(i);                
             }
             if (koodisto.get(apu) == null && apu.length() == 2) {
                 i--;
-                apu = "" + koodi.charAt(i);
-                System.out.println("2 ja null " + apu);                
+                apu = "" + koodi.charAt(i);                            
             }
             if (koodisto.get(apu) != null) {
-                teksti += koodisto.get(apu);
-                System.out.println("Lisätään: " + apu);
+                teksti += koodisto.get(apu);                
             }
             apu = "";
         }
