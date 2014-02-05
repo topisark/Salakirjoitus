@@ -6,8 +6,8 @@
 
     <p>Ohjelma ei nyt siis toimi ihan täydellisesti, mutta toivottavasti se ei haittaa menoa!</p>
     <br>
-    
-    <% if (session.getAttribute("salaisuus") != null && !session.getAttribute("salaisuus").equals("42")) { %>
+
+    <% if (session.getAttribute("salaisuus") == null || !session.getAttribute("salaisuus").equals("42")) { %>
     <p>Mikä on vastaus suureen kysymykseen elämästä, maailmankaikkeudesta ja muusta sellaisesta?</p>
 
     <div>
@@ -18,7 +18,12 @@
             <button type="submit" class="btn btn-default">Jee!</button>
         </form>
     </div>
-    <% }%>   
+    <% } else { %>       
+    <ul>
+        <li><a href="koodaa.jsp">Kirjoita viesti</a></li>
+        <li><a href="pura.jsp">Tulkitse viesti</a></li>   
+    </ul>
+    <% }%>  
 
 </div>
 </body>
