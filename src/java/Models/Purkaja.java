@@ -26,7 +26,7 @@ public class Purkaja {
     public String pura(String koodi) {
         String teksti = "";
         String apu = "";
-        if (koodi.length() == 1) {
+        if (koodi.length() == 1 && koodisto.get(koodi) != null) {
             return "" + koodisto.get(koodi);
         }
         for (int i = 0; i < koodi.length(); i++) {
@@ -34,15 +34,19 @@ public class Purkaja {
                 apu += koodi.charAt(i);
                 apu += koodi.charAt(i + 1);
                 i++;
+                System.out.println("on jäljellä " + apu);
             } else {
                 apu += koodi.charAt(i);
+                System.out.println("else " + apu);
             }
             if (koodisto.get(apu) == null && apu.length() == 2) {
-                apu = "" + koodi.charAt(i);
                 i--;
+                apu = "" + koodi.charAt(i);
+                System.out.println("2 ja null " + apu);                
             }
             if (koodisto.get(apu) != null) {
                 teksti += koodisto.get(apu);
+                System.out.println("Lisätään: " + apu);
             }
             apu = "";
         }

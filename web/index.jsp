@@ -2,9 +2,10 @@
 <div class="container">
     <h1>Pieni salakirjoitustulkki</h1>     
 
-    <p>Olikohan salakirjoituksessa virhe, vai ymmärsinkö väärin? Käsittääkseni esim. A = 2 ja Q = 22, jolloin on vaikea tulkita onko syötteellä 22 tarkoitettu AA vai Q.</p>
+    
+    <p>Olikohan salakirjoituksessa pieni ongelma? Käsittääkseni esim. A = 2 ja Q = 22, jolloin on vaikea tulkita onko syötteellä 22 tarkoitettu AA vai Q.</p>
 
-    <p>Ohjelma ei nyt siis toimi ihan täydellisesti, mutta toivottavasti se ei haittaa menoa!</p>
+    <p>Ohjelma kuitenkin toimii pienten kikkailujen jälkeen aika hyvin, joten testaamaan vain!</p>
     <br>
 
     <% if (session.getAttribute("salaisuus") == null || !session.getAttribute("salaisuus").equals("42")) { %>
