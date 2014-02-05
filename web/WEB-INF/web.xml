@@ -8,6 +8,10 @@
         <servlet-name>PurkuServlet</servlet-name>
         <servlet-class>Servlets.PurkuServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>SalaisuuksienServlet</servlet-name>
+        <servlet-class>Servlets.SalaisuuksienServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>KoodaaServlet</servlet-name>
         <url-pattern>/koodaa</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>PurkuServlet</servlet-name>
         <url-pattern>/pura</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SalaisuuksienServlet</servlet-name>
+        <url-pattern>/salaisuus</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

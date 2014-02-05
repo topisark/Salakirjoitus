@@ -23,8 +23,10 @@
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
+                        <% if (session.getAttribute("salaisuus") != null && session.getAttribute("salaisuus").equals("42")) {  %>
                         <li><a href="koodaa.jsp">Kirjoita viesti</a></li>
-                        <li><a href="pura.jsp">Tulkitse viesti</a></li>                        
+                        <li><a href="pura.jsp">Tulkitse viesti</a></li>    
+                            <% }%>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
